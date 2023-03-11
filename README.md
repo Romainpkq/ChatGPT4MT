@@ -2,12 +2,13 @@
 
 <b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://github.com/Romainpkq/ChatGPT4MT/sources/report.pdf))
 
-This repository releases the testsets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
+This repository releases the test sets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
 
 ## Abstract
 
-ChatGPT shows remarkable capabilities for machine translation (MT). Several prior studies have shown that it achieves comparable results to commercial systems for high-resource languages, but lags behind in complex tasks, e.g, low-resource and distant-language-pairs translation. However, **they usually adopt simple prompts which can not fully elicit the capability of ChatGPT**. In this report, we aim to further mine ChatGPT's translation ability by revisiting several aspects: temperature, task information, and domain information, and correspondingly propose two *<font color=red>(simple but effective)</font>* prompts: *Task-Specific Prompts* (TSP) and *Domain-Specific Prompts* (DSP). We show that: 1. The performance of ChatGPT depends largely on temperature, and a lower temperature usually can achieve better performance; 2. Emphasizing the task information further improves ChatGPT's performance, particularly in complex MT tasks; 3. Introducing domain information can elicit ChatGPT's generalization ability and improve its performance in the specific domain; 4. ChatGPT tends to generate hallucinations for non-English-centric MT tasks, which can be partially addressed by our proposed prompts but still need to be highlighted for the MT/NLP community.
-We also explore the effects of advanced in-context learning strategies and find a <font color=red>(negative but interesting)</font> observation: the powerful chain-of-thought prompt leads to word-by-word translation behavior, thus bringing significant translation degradation.
+<div align="center">
+    <img width="100%" alt="image" src="./figures/abstract.png">
+</div>
 
 ## Data and Evaluations
 
@@ -15,68 +16,6 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
 
 
 <div align="center">
-    <img width="80%" alt="image" src="./figures/datasets.png">
+    <img width="50%" alt="image" src="./figures/datasets.png">
 </div>
 
-## An overview of Error Analysis Prompting
-
-An overview of our error analysis prompting. Detailed prompt contexts can be obtained in "[./prompts](./prompts/)".
-
-<div align="center">
-    <img width="80%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/overview.png">
-</div>
-
-
-
-## Results and Findings
-
-1. :slightly_smiling_face: Our EA Prompting outperforms standard prompting at the segment level, achieving human-like evaluations at both the system level and segment level.
-
-   > System & Segment level performance on our testset:
-
-<div align="center">
-    <img width="80%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/result.png">
-</div>
-
-
-
-2. :thinking: When designing prompts, itemized responses are better than lengthy and detailed explanations of errors. Moreover, splitting the instruction into two identifying errors and scoring translation can improve evaluation stability.
-
-   > An comparison on different prompt designs, and their prompt contexts:
-
-<div align="center">
-    <img width="85%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/promptcompare.png">
-</div>
-<div align="center">
-    <img width="75%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/promptcontext.png">
-</div>
-
-
-
-
-3. :neutral_face: The boosted performance from EA prompting is observed in the zero-shot scenario on text-davinci-003 rather than in the few-shot scenario, which indicates that we need to adjust our settings when utilizing other GPT models.
-4. :exclamation: Despite its good performance, we show that ChatGPT is NOT a stable evaluator and may score the same translation differently.
-
-<div align="center">
-    <img width="25%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/unstable.png">
-</div>
-
-5. :exclamation: It is NOT advisable to combine multiple translations into a single query input, as ChatGPT has a preference for former translations. 
-
-<div align="center">
-    <img width="100%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/input%20bias.png">
-</div>
-
-Please refer to our full [report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf) for more details.
-
-## Citation
-If you find this work helpful, please consider citing as follows:  
-
-```ruby
-@article{Lu2023EAPrompt,
-  title={Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT},
-  author={Lu, Qingyu and Qiu, Baopu and Ding, Liang and Xie, Liping and Tao, Dacheng},
-  journal={arXiv preprint},
-  year={2023}
-}
-```
