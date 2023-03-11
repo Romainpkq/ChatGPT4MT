@@ -26,7 +26,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
  > The relationship between temperature and ChatGPT's performance:
 
 <div align="center">
-    <img width="95%" alt="imageTSP" src="./figures/temp.png">
+    <img width="90%" alt="imageTSP" src="./figures/temp.png">
 </div>
 
 2. Emphasizing the task information in prompts can further improve ChatGPT's performance, especially in complex tasks.
@@ -56,7 +56,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
  > The effect of CoT on ChatGPT:
 
 <div align="center">
-    <img width="80%" alt="image" src="./figures/CoT.png">
+    <img width="90%" alt="image" src="./figures/CoT.png">
 </div>
 
 
