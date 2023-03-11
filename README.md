@@ -26,14 +26,14 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
  > The relationship between temperature and ChatGPT's performance:
 
 <div align="center">
-    <img width="100%" alt="image" src="./figures/tem.pdf">
+    <img width="100%" alt="imageTSP" src="./figures/temp.png">
 </div>
 
 2. Emphasizing the task information in prompts can further improve ChatGPT's performance, especially in complex tasks.
  > Influence of Task-Specific Prompts (TPS) on ChatGPT:
 
 <div align="center">
-    <img width="80%" alt="image" src="./figures/multilingual_translation.png">
+    <img width="80%" alt="image" src="./figures/TSP.png">
 </div>
 
 3. Introducing the correct domain information consistently improves ChatGPT's performance while wrong domain information leads to significant degradation in performance.
