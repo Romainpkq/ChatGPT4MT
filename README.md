@@ -55,6 +55,8 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
 </div>
 
 
+## Citation
+If you find this work helpful, please consider citing as follows:  
 ```ruby
 @article{Peng2023ChatGPT4MT,
   title={Towards Making the Most of ChatGPT for Machine Translation},
