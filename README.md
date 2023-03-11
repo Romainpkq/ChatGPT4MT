@@ -16,7 +16,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
 
 
 <div align="center">
-    <img width="75%" alt="image" src="./figures/datasets.png">
+    <img width="70%" alt="image" src="./figures/datasets.png">
 </div>
 
 ## Results and Findings
@@ -48,7 +48,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
  
  > The number of sentences that need to be post-preprocessed in difference settings:
 <div align="center">
-    <img width="90%" alt="image" src="./figures/PE_number.png">
+    <img width="80%" alt="image" src="./figures/PE_number.png">
 </div>
 
 5.  CoT leads to word-byword translation behavior, thus bringing significant translation degradation.
