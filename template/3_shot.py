@@ -15,3 +15,5 @@ completion = openai.ChatCompletion.create(
          }],
     temperature=0
 )
+
+print(completion.choices[0]["message"]["content"])
