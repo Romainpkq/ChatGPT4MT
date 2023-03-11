@@ -1,21 +1,22 @@
-# Towards Making the Most of ChatGPT for Machine Translation
+# ErrorAnalysis Prompt for MT Evaluation in ChatGPT
 
-<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://github.com/Romainpkq/ChatGPT4MT/sources/report.pdf))
+<b>Error Analysis Prompting Enables Human-Like Translation Evaluation in Large Language Models: A Case Study on ChatGPT</b>. ([Full report](https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/report.pdf))
 
-This repository releases the testsets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
+This repository releases the testsets and the scores evaluated by text-davinci-003 and [ChatGPT](https://chat.openai.com/chat),  for the replication of the study.
 
 ## Abstract
 
-ChatGPT shows remarkable capabilities for machine translation (MT). Several prior studies have shown that it achieves comparable results to commercial systems for high-resource languages, but lags behind in complex tasks, e.g, low-resource and distant-language-pairs translation. However, **they usually adopt simple prompts which can not fully elicit the capability of ChatGPT**. In this report, we aim to further mine ChatGPT's translation ability by revisiting several aspects: temperature, task information, and domain information, and correspondingly propose two *<font color=red>(simple but effective)</font>* prompts: *Task-Specific Prompts* (TSP) and *Domain-Specific Prompts* (DSP). We show that: 1. The performance of ChatGPT depends largely on temperature, and a lower temperature usually can achieve better performance; 2. Emphasizing the task information further improves ChatGPT's performance, particularly in complex MT tasks; 3. Introducing domain information can elicit ChatGPT's generalization ability and improve its performance in the specific domain; 4. ChatGPT tends to generate hallucinations for non-English-centric MT tasks, which can be partially addressed by our proposed prompts but still need to be highlighted for the MT/NLP community.
-We also explore the effects of advanced in-context learning strategies and find a <font color=red>(negative but interesting)</font> observation: the powerful chain-of-thought prompt leads to word-by-word translation behavior, thus bringing significant translation degradation.
+Generative large language models (LLMs), e.g., ChatGPT, have demonstrated remarkable proficiency across several NLP tasks such as machine translation, question answering, text summarization, and natural language understanding. Recent research ([Kocmi and Federmann, 2023](https://arxiv.org/pdf/2302.14520.pdf)) has shown that utilizing ChatGPT for assessing the quality of machine translation (MT) achieves state-of-the-art performance at the system level but *performs poorly at the segment level*. To further improve the performance of LLMs on MT quality assessment, we conducted an investigation into several prompting methods. Our results indicate that by combining Chain-of-Thoughts ([Wei et al., 2022](https://arxiv.org/pdf/2201.11903.pdf)) and Error Analysis ([Lu et al., 2022](https://arxiv.org/pdf/2212.10179.pdf)), a new prompting method called **Error Analysis Prompting**, LLMs like ChatGPT can *generate human-like MT evaluations at both the system and segment level*. Additionally, we discovered some limitations of ChatGPT as an MT evaluator, such as unstable scoring and biases when provided with multiple translations in a single query. Our findings aim to provide a preliminary experience for appropriately evaluating translation quality on ChatGPT while offering a variety of tricks in designing prompts for in-context learning. 
+We anticipate that this report will shed new light on advancing the field of translation evaluation with LLMs by enhancing both accuracy and reliability of metrics.
 
 ## Data and Evaluations
 
-We evaluate the performance of the models on the [Flores-200](https://github.com/facebookresearch/flores/tree/main/flores200) and [WMT19 Bio](https://www.statmt.org/wmt19/biomedical-translation-task.html) and  [News](https://www.statmt.org/wmt19/translation-task.html) test sets. The task statistics are shown as follows:
+For each language pair, we divide the segments from WMT20 testset into four groups based on the number of tokens they contain (15-24, 25-34, 35-44, 45-54). We randomly sample 10 segments from each group and form a new dataset containing 40 segments. We utilize Multidimentional Quality Metric (MQM) as human evaluation. The test data and its corresponding evaluation scores can be obtained in "[./data](./data/)".
 
+The task statistics are shown as follows:
 
 <div align="center">
-    <img width="80%" alt="image" src="./figures/datasets.png">
+    <img width="80%" alt="image" src="https://github.com/Coldmist-Lu/ErrorAnalysis_Prompt/blob/main/sources/testset.png">
 </div>
 
 ## An overview of Error Analysis Prompting
