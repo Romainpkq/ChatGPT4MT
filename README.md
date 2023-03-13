@@ -36,7 +36,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
 
 3. Introducing the correct domain information consistently improves ChatGPT's performance while wrong domain information leads to significant degradation in performance.
 
-    > Influence of Domain-Specific Prompts (TPS) on ChatGPT:
+    > Influence of Domain-Specific Prompts (DPS) on ChatGPT:
 <div align="center">
     <img width="80%" alt="image" src="./figures/DSP.png">
 </div>
