@@ -62,7 +62,7 @@ If you find this work helpful, please consider citing as follows:
 ```ruby
 @article{Peng2023ChatGPT4MT,
   title={Towards Making the Most of ChatGPT for Machine Translation},
-  author={Peng, Keqin and Ding, Liang and Zhong, Qihuang, and Shen, Li, and Liu, Xuebo, and Zhang, Min, and Ouyang, Yuanxin and Tao, Dacheng},
+  author={Peng, Keqin and Ding, Liang and Zhong, Qihuang and Shen, Li and Liu, Xuebo and Zhang, Min and Ouyang, Yuanxin and Tao, Dacheng},
   journal={arXiv preprint},
   year={2023}
 }
