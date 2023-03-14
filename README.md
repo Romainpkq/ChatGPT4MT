@@ -64,7 +64,7 @@ If you find this work helpful, please consider citing as follows:
   title={Towards Making the Most of ChatGPT for Machine Translation},
   author={Peng, Keqin and Ding, Liang and Zhong, Qihuang and Shen, Li and Liu, Xuebo and Zhang, Min and Ouyang, Yuanxin and Tao, Dacheng},
   journal={ResearchGate preprint},
-  doi={10.13140/RG.2.2.24416.97283},
+  doi={https://doi.org/10.13140/RG.2.2.24416.97283},
   year={2023}
 }
 ```
