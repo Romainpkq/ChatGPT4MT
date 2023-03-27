@@ -1,7 +1,6 @@
 # Towards Making the Most of ChatGPT for Machine Translation
 
-<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://github.com/Romainpkq/ChatGPT4MT/blob/main/source/report.pdf) & [OpenReview version](https://openreview.net/pdf?id=rkq3oV-smlG) & [ResearchGate version](https://www.researchgate.net/publication/369198308_Towards_Making_the_Most_of_ChatGPT_for_Machine_Translation))
-
+<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://arxiv.org/abs/2303.13780)
 This repository releases the test sets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
 
 ## Abstract
@@ -55,7 +54,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
     <img width="50%" alt="image" src="./figures/CoT1.png">
 </div>
 
-Please refer to our full [report](https://github.com/Romainpkq/ChatGPT4MT/blob/main/source/report.pdf) & [arxiv](https://arxiv.org/abs/2303.13780) for more details.
+Please refer to our full [report](https://arxiv.org/abs/2303.13780) for more details.
 
 ## Citation
 If you find this work helpful, please consider citing as follows:  
@@ -63,8 +62,8 @@ If you find this work helpful, please consider citing as follows:
 @article{Peng2023ChatGPT4MT,
   title={Towards Making the Most of ChatGPT for Machine Translation},
   author={Peng, Keqin and Ding, Liang and Zhong, Qihuang and Shen, Li and Liu, Xuebo and Zhang, Min and Ouyang, Yuanxin and Tao, Dacheng},
-  journal={ResearchGate preprint},
-  doi={https://doi.org/10.13140/RG.2.2.24416.97283},
+  journal={arxiv preprint},
+  url={https://arxiv.org/abs/2303.13780},
   year={2023}
 }
 ```
