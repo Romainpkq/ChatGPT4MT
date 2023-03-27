@@ -1,6 +1,7 @@
 # Towards Making the Most of ChatGPT for Machine Translation
 
-<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://arxiv.org/abs/2303.13780)
+<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://arxiv.org/abs/2303.13780))
+
 This repository releases the test sets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
 
 ## Abstract
