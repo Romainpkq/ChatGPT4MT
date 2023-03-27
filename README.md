@@ -55,7 +55,7 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
     <img width="50%" alt="image" src="./figures/CoT1.png">
 </div>
 
-Please refer to our full [report](https://github.com/Romainpkq/ChatGPT4MT/blob/main/source/report.pdf) & [ResearchGate preprint](https://www.researchgate.net/publication/369198308_Towards_Making_the_Most_of_ChatGPT_for_Machine_Translation) for more details.
+Please refer to our full [report](https://github.com/Romainpkq/ChatGPT4MT/blob/main/source/report.pdf) & [ResearchGate preprint](https://www.researchgate.net/publication/369198308_Towards_Making_the_Most_of_ChatGPT_for_Machine_Translation) & [arxiv](https://arxiv.org/abs/2303.13780) for more details.
 
 ## Citation
 If you find this work helpful, please consider citing as follows:  
