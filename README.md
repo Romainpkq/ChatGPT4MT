@@ -57,6 +57,9 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
 
 Please refer to our full [report](https://arxiv.org/abs/2303.13780) for more details.
 
+## Media Coverage
+- Slator: [“You Are a Machine Translation System” — How to Improve ChatGPT’s Translations](https://slator.com/machine-translation-system-how-to-improve-chatgpts-translations/)
+
 ## Citation
 If you find this work helpful, please consider citing as follows:  
 ```ruby
