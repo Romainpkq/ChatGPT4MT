@@ -1,6 +1,6 @@
 # Towards Making the Most of ChatGPT for Machine Translation
 
-<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://arxiv.org/abs/2303.13780))
+<b>Towards Making the Most of ChatGPT for Machine Translation</b>. ([Full report](https://arxiv.org/abs/2303.13780), Findings of EMNLP 2023 [accpeted version](https://aclanthology.org/2023.findings-emnlp.373))
 
 This repository releases the test sets evaluated by [ChatGPT](https://chat.openai.com/chat) API (gpt-3.5-turbo-0301),  for the replication of the study.
 
@@ -66,8 +66,8 @@ If you find this work helpful, please consider citing as follows:
 @article{Peng2023ChatGPT4MT,
   title={Towards Making the Most of ChatGPT for Machine Translation},
   author={Peng, Keqin and Ding, Liang and Zhong, Qihuang and Shen, Li and Liu, Xuebo and Zhang, Min and Ouyang, Yuanxin and Tao, Dacheng},
-  journal={arxiv preprint},
-  url={https://arxiv.org/abs/2303.13780},
+  journal={Findings of EMNLP 2023},
+  url={https://aclanthology.org/2023.findings-emnlp.373},
   year={2023}
 }
 ```
