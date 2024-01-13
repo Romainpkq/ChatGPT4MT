@@ -63,10 +63,10 @@ Please refer to our full [report](https://arxiv.org/abs/2303.13780) for more det
 ## Citation
 If you find this work helpful, please consider citing as follows:  
 ```ruby
-@article{Peng2023ChatGPT4MT,
+@inproceedings{Peng2023ChatGPT4MT,
   title={Towards Making the Most of ChatGPT for Machine Translation},
   author={Peng, Keqin and Ding, Liang and Zhong, Qihuang and Shen, Li and Liu, Xuebo and Zhang, Min and Ouyang, Yuanxin and Tao, Dacheng},
-  journal={Findings of EMNLP 2023},
+  booktitle={Findings of EMNLP 2023},
   url={https://aclanthology.org/2023.findings-emnlp.373},
   year={2023}
 }
