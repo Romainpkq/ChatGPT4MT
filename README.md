@@ -41,14 +41,14 @@ We evaluate the performance of the models on the [Flores-200](https://github.com
     <img width="80%" alt="image" src="./figures/DSP.png">
 </div>
 
-4. When tackling the non-English-centric tasks (both the input and expected output are non-English), ChatGPT may generate hallucinations, which should be paid more attention to by the MT/NLP community.
+4. When tackling non-English-centric tasks (both the input and expected output are non-English), ChatGPT may generate hallucinations, which should be paid more attention to by the MT/NLP community.
  
-    > The number of sentences that need to be post-preprocessed in difference settings:
+    > The number of sentences that need to be post-preprocessed in different settings:
 <div align="center">
     <img width="50%" alt="image" src="./figures/num_PE.png">
 </div>
 
-5.  CoT leads to word-byword translation behavior, thus bringing significant translation degradation.
+5.  CoT leads to word-by-word translation behavior, thus bringing significant translation degradation.
 
     > The effect of CoT on ChatGPT:
 <div align="center">
